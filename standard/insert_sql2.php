@@ -152,17 +152,18 @@ if ($mode == "insert_data") {
 
         //echo "<br>";
     }
-    if (sqlsrv_query($conn, $sql4)) {
-        $alert = '<script type="text/javascript">';
-        $alert .= 'alert("เพิ่มข้อมูลสถานะสำเร็จ !!");';
-        $alert .= 'window.location.href = "?page=status";';
-        $alert .= '</script>';
-        echo $alert;
-        exit();;
-    } else {
-        echo "Error: " . $sql0 . "<br>" . sqlsrv_errors($conn);
-    }
-    sqlsrv_close($conn);
+    // if (sqlsrv_query($conn, $sql4)) {
+    //     $alert = '<script type="text/javascript">';
+    //     $alert .= 'alert("เพิ่มข้อมูลสถานะสำเร็จ !!");';
+    //     $alert .= 'window.location.href = "?page=status";';
+    //     $alert .= '</script>';
+    //     echo $alert;
+    //     exit();;
+    // } else {
+    //     echo "Error: " . $sql0 . "<br>" . sqlsrv_errors($conn);
+    // }
+    // sqlsrv_close($conn);
+    echo "ok save" ;
 
     //echo "<script>location.href='index.php?PG=1';</script>";
 }
